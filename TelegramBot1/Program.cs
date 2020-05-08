@@ -37,6 +37,7 @@ namespace TelegramBot1
             SqlConnection connection = new SqlConnection(connectionstr);
             connection.Open();
 
+
             SqlDataReader sqlReader = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [Stations]", connection);
               
