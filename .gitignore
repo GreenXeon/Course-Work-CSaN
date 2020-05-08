@@ -11,6 +11,7 @@
 *.sln.docstates
 Info.cs
 Station.cs
+TelegramBot1.csproj
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
