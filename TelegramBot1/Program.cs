@@ -21,8 +21,7 @@ namespace TelegramBot1
         static Station[] stations = new Station[29];
         static void Main(string[] args)
         {
-            Bot = new TelegramBotClient("1081984297:AAHRVjJPPtyuIpdIbJvUz-ubRCqJILMmv8A");
-            //GoogleSigned.AssignAllServices(new GoogleSigned("AIzaSyAsX03I0z7Bgm9RBgQ9qXPWOc7zKho8xnY"));
+            Bot = new TelegramBotClient(Info.apiKey);
 
             StationsInitialize(ref stations);
 
@@ -34,7 +33,7 @@ namespace TelegramBot1
 
         public static void StationsInitialize(ref Station[] stations)
         {
-            string connectionstr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\BSUIR\4 Sem\KSIS\Course Work\GeoSubway\TelegramBot1\TelegramBot1\Database1.mdf;Integrated Security=True";
+            string connectionstr = Info.sqlPath;
             SqlConnection connection = new SqlConnection(connectionstr);
             connection.Open();
 
