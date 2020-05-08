@@ -9,8 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-TelegramBot1/Info.cs
-TelegramBot1/Station.cs
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
